@@ -1,0 +1,47 @@
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(1px, 1px);
+  }
+  40% {
+    transform: translate(-1px, -1px);
+  }
+  60% {
+    transform: translate(1px, -1px);
+  }
+  80% {
+    transform: translate(-1px, 1px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes message {
+  0% {
+    transform:
+    translateY(15rem)
+    scale(10%);
+
+  }
+
+  100% {
+    transform:
+    translateY(0)
+    scale(100%);
+  }
+}

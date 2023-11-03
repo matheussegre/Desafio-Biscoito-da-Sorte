@@ -1,0 +1,143 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: 2.4rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-size: 200% 200%;
+  background-image: linear-gradient(45deg, #190361 0%, #B0F 100%);
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.hide {
+  display: none;
+}
+
+.home, .luck {
+  width: min(42.8rem, 90%);
+}
+
+main {
+  padding: 4.8rem 6.4rem 6.4rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.8);
+  background-color: #FFFFFF;
+}
+main h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin: 0 2rem;
+  color: #34355B;
+}
+main p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1.4rem;
+  margin-bottom: 2rem;
+  color: #34355B;
+}
+main img:hover {
+  cursor: pointer;
+  animation: shake 0.5s ease infinite;
+}
+
+.luck main {
+  padding: 4.8rem 6.4rem;
+}
+.luck main h1 {
+  margin: 0;
+}
+.luck main .luck-message {
+  width: 30rem;
+  height: 11rem;
+  margin: 1.7rem 0;
+  padding: 1rem;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
+  background-color: #E4EDF1;
+  animation: message 5s ease;
+}
+.luck main .luck-message p {
+  margin: 0;
+  font-family: "Dancing Script", sans-serif;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #000;
+}
+.luck main img {
+  padding: 2.2rem 0;
+}
+.luck main img:hover {
+  cursor: default;
+  animation: none;
+}
+.luck main button {
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1.7rem;
+  padding: 1.6rem;
+  border-radius: 0.4rem;
+  color: #FFF;
+  background: #FF9500;
+}
+.luck main button:hover {
+  cursor: pointer;
+  background: #dc860e;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(1px, 1px);
+  }
+  40% {
+    transform: translate(-1px, -1px);
+  }
+  60% {
+    transform: translate(1px, -1px);
+  }
+  80% {
+    transform: translate(-1px, 1px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes message {
+  0% {
+    transform: translateY(15rem) scale(10%);
+  }
+  100% {
+    transform: translateY(0) scale(100%);
+  }
+}/*# sourceMappingURL=styles.css.map */
